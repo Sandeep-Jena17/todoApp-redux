@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
-}
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 40px;
+  background-image: url("./assets/img/bg-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  /* background-position: top; */
+  /* background: cover; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.app {
+  /* display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center; */
+  min-height: 500px;
+  width: 400px;
+  margin: 40px auto;
 }
 
-.App-link {
-  color: #61dafb;
+.todo__form input {
+  background-color: rgba(27, 112, 137, 1);
+  border: 0;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  margin: 20px;
+  padding: 0 20px;
+  font-size: 18px;
+  border-radius: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.todo__form input::placeholder {
+  color: #fff;
+}
+.todo__form button {
+  height: 50px;
+  width: 80px;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgba(202, 156, 24, 1);
+  cursor: pointer;
+}
+.todo__form button:focus {
+  outline: none;
+}
+@media only screen and (min-width: 400px) {
+  body {
+    background-image: url("./assets/img/bg-1.jpg");
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (min-device-width: 400px) {
+  body {
+    background-image: url("./assets/img/bg-1.jpg");
   }
 }
